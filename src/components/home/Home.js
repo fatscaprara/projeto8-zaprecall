@@ -1,3 +1,4 @@
+import Footer from "../footer/Footer";
 import Logo from "./../../assets/img/logo.png";
 import "./style.css";
 
