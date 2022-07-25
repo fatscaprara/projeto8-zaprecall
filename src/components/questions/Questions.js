@@ -1,6 +1,6 @@
 import React from "react";
 import data from "../../data/index";
-import logo from "../../assets/img/logo-pequeno.png";
+import logo from "../../assets/images/logo-pequeno.png";
 import FlashCard from "../flashcard/FlashCard";
 import Icon from "../shared/Icon";
 import Footer from "../footer/Footer";
@@ -21,7 +21,7 @@ export default function Questions() {
 
   function resultAnswes() {
     const result = queueAnswer.find((value) => value === "error");
-    return <>{result ? <p>Você errou!!! 😥</p> : <p>Opa, mandou bem! 🥳</p>}</>;
+    return <>{result ? <p>😥 Putz...</p> : <p>🥳 Parabéns!</p>}</>;
   }
 
   function tapCard(cardIndex) {
@@ -91,6 +91,7 @@ export default function Questions() {
           if (value !== "not_answer") {
             return <Icon status={value} />;
           }
+          return "";
         })}
         <p>
           {answer}/{questions.length} CONCLUÍDOS

@@ -1,5 +1,4 @@
-import Footer from "../footer/Footer";
-import Logo from "./../../assets/img/logo.png";
+import Logo from "./../../assets/images/logo.png";
 import "./style-home.css";
 
 function Home({ setVisible }) {

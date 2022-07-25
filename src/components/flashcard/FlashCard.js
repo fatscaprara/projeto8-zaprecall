@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from "../shared/Icon";
-import setinha from "../../assets/img/setinha.png";
+import setinha from "../../assets/images/setinha.png";
 
 //Card Desvirado
 function Card({ title, index, tapCard, status }) {
